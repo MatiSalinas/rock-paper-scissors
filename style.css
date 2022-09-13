@@ -1,6 +1,13 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Text?query=red+ha&sort=popularity&noto.script=Latn);
+html{
+    font-family: 'Red Hat Text', sans-serif;
+}
 body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
     margin: 0;
     padding: 0;
     background-color: #3C3744;
@@ -10,10 +17,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4em;
+    height: 10vh;
+    width: 100%;
     background-color: #4357AD;
     font-size: 2rem;
-    font-family: sans-serif;
+    color:aliceblue;
 }
 .squares{
     display: flex;
@@ -26,3 +34,19 @@ img{
     width: 200px;
     height: 200px;
 }
+
+.score,.gameOver{
+font-size: 34px;
+}
+
+.medio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img:hover {
+    transform: scale(1.1);
+    border-radius: 30px;
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
