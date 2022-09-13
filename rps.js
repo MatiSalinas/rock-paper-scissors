@@ -7,8 +7,18 @@ function getComputerSelection(){
 let pwins =0;
 let cwins = 0;
 
-function playRound(){
-    let playerSelection = prompt("Choose Rock, Paper, Scissors").toLowerCase()
+const buttons = document.querySelectorAll('.boton')
+
+buttons.forEach((button) => {
+
+    button.addEventListener('click', () => {
+        playRound(button.id)
+    });
+  });
+
+
+function playRound(selection){
+    const playerSelection = selection
     computerSelection = getComputerSelection()
     if (playerSelection == "rock" && computerSelection == "scissors")
     {
@@ -42,18 +52,9 @@ function playRound(){
     }else{
         console.log("Its a tie!")
     } 
+    console.log("Player: "+pwins +" | computer: " + cwins)
 }
 
-function game(){
-    for(let i = 0 ; i < 5;i++){
-        playRound();
-        console.log("Player: "+pwins +" | computer: " + cwins)
-    }
-    if(pwins > cwins){
-        console.log("Game Over! You won!")
-    }else if(pwins < cwins) {
-        console.log("Game Over! You lost!")
-    } else console.log("Its a Tie!")
-}
-game()
+
+
 

@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #3C3744;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    background-color: #4357AD;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+.squares{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+img{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+}
