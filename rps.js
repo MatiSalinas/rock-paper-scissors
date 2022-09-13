@@ -60,7 +60,7 @@ function playRound(selection){
         console.log("Its a tie!")
     } 
     console.log("Player: "+pwins +" | computer: " + cwins)
-    score.textContent = `Wins:${pwins}    loses:${cwins}`
+    score.textContent = `Wins:${pwins}    losses:${cwins}`
 
     if(pwins ==5){
         gameOver.textContent = 'Congratulations you won! GAME OVER'
