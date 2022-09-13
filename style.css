@@ -10,7 +10,7 @@ body{
     gap: 2em;
     margin: 0;
     padding: 0;
-    background-color: #3C3744;
+    background-color: #E8E9EB;
 }
 
 header {
@@ -19,9 +19,13 @@ header {
     align-items: center;
     height: 10vh;
     width: 100%;
-    background-color: #4357AD;
+    background-color: #FFFBFE;
     font-size: 2rem;
-    color:aliceblue;
+    color:black;
+    font-weight: 790;
+    border-bottom: 2px solid #d1cdd0;
+    text-shadow: 0 0 0.5rem #e6d8d8;
+
 }
 .squares{
     display: flex;
@@ -49,4 +53,15 @@ img:hover {
     border-radius: 30px;
     border-color: #ffc600;
     box-shadow: 0 0 1rem #ffc600;
+  }
+  #paper:hover{
+    background-color: #E3212C;
+  }
+
+  #rock:hover{
+    background-color: #19ABA0;
+  }
+
+  #scissors:hover{
+    background-color: #B3CC32;
   }
